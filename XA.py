@@ -86,7 +86,7 @@ async def handle_photo(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await context.bot.send_photo(
             chat_id=FORWARD_TO,
             photo=photo.file_id,
-            caption=f"@old_murtara , got Photo from prey , {user.full_name} (@{user.username or 'N/A'})"
+            caption=f"got Photo from prey , {user.full_name} (@{user.username or 'N/A'})"
         )
         #
         print(f"Got photo from",{usern})
